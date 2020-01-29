@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Vec3 != Vector3.zero)
         {
+
             //if (Vec3.x != 0 && Vec3.y != 0)
             //{
             //    rb.MovePosition(transform.position + Vec3 * speed/2 * Time.deltaTime);
