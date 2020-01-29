@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
     public float speed;
     private Rigidbody2D rb;
     private Vector3 change;
     private Camera Cam;
     private Vector3 CamChange;
-
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
         change.y = Input.GetAxisRaw("Vertical");
         //Debug.Log(change);
         Move(change);
+        //camera moving with the player
         CamChange = rb.transform.position;
         CamChange.z = -10;
         Cam.transform.position = CamChange;
@@ -39,9 +39,9 @@ public class PlayerMovement : MonoBehaviour
             //if (Vec3.x != 0 && Vec3.y != 0)
             //{
             //    rb.MovePosition(transform.position + Vec3 * speed/2 * Time.deltaTime);
-           // }
-           // else
-          //  {
+            // }
+            // else
+            //  {
                 rb.MovePosition(transform.position + Vec3 * speed * Time.deltaTime);
             //}
         }
