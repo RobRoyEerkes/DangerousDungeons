@@ -33,6 +33,7 @@ public class EnemyCombat : MonoBehaviour
     {
         Debug.Log(this.name + " Died.");
         GetComponent<Collider2D>().enabled = false;
+        Destroy(this.gameObject);
         this.enabled = false;
     }
 

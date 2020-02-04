@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     private Vector3 change;
+    public int Dir;
 
     //Camera vars
     private Camera Cam;
@@ -38,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    
+
     //funcion to move the player
     private void Move(Vector3 Vec3)
     {
@@ -52,6 +55,15 @@ public class PlayerMovement : MonoBehaviour
             //  {
             rb.MovePosition(transform.position + Vec3 * speed * Time.deltaTime);
             //}
+            //setting direction value.
+            if (Vec3.x == 1)
+                Dir = 1;
+            else if (Vec3.x == -1)
+                Dir = 3;
+            else if (Vec3.y == 1)
+                Dir = 0;
+            else
+                Dir = 2;
         }
     }
 }
