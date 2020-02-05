@@ -12,14 +12,14 @@ public class PlayerMovement : MonoBehaviour
     public int Dir;
 
     //Camera vars
-    private Camera Cam;
+    public Camera Cam;
     private Vector3 CamChange;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Cam = Camera.main;
+        
 
     }
 
