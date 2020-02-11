@@ -10,15 +10,16 @@ public class PlayerCombat : MonoBehaviour
 
     public float attackRange;
     public int attackDamage;
-   
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
             Attack();
         
     }
-
+    
+    //called when player wants to atack 
+    //deals damage to enemies in range of the attackpoint
     private void Attack()
     {
         if (this.GetComponent<PlayerMovement>().Dir == 3)
@@ -33,14 +34,16 @@ public class PlayerCombat : MonoBehaviour
             enemy.GetComponent<EnemyCombat>().takeDamage(attackDamage);
         
     }
-
+    
+    //debug for seeing the range of the attack (only in the editor)
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
             return;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
-
+    
+    //damages the player (takes health away)
     public void DamagePlayer(int Damage)
     {
         Health -= Damage;
