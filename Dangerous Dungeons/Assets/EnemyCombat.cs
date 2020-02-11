@@ -11,7 +11,7 @@ public class EnemyCombat : MonoBehaviour
     public PlayerCombat Player;
 
 
-
+    //damages the playeur when it is in the enemy
     public void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject Enemy = collision.gameObject;
@@ -21,6 +21,7 @@ public class EnemyCombat : MonoBehaviour
         }
     }
     
+    //does damage to the enemy fuckboi and when health is below 0 it dies
     public void takeDamage(int damage)
     {
         currentHealth -= damage;
@@ -28,7 +29,8 @@ public class EnemyCombat : MonoBehaviour
         if (currentHealth < 1)
             Die();
     }
-
+    
+    //destroyes enemy gameobect and script plays death animation 
     public void Die()
     {
         Debug.Log(this.name + " Died.");
@@ -36,17 +38,9 @@ public class EnemyCombat : MonoBehaviour
         Destroy(this.gameObject);
         this.enabled = false;
     }
-
     
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = MaxHealth;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
