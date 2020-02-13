@@ -366,13 +366,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052d0d6ce278eee4c8c72497075fdaab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
+  Health: 5
   attackPoint: {fileID: 1247556077}
   EnemyLayers:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 0.18
-  attackDamage: 10
+  attackDamage: 1
 --- !u!95 &762930607
 Animator:
   serializedVersion: 3
