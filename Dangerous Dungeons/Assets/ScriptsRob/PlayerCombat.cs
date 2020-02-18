@@ -7,6 +7,7 @@ public class PlayerCombat : MonoBehaviour
     public int Health;
     public Transform attackPoint;
     public LayerMask EnemyLayers;
+    private Animator animator;
 
     public float attackRange;
     public int attackDamage;
@@ -17,11 +18,17 @@ public class PlayerCombat : MonoBehaviour
             Attack();
         
     }
-    
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     //called when player wants to atack 
     //deals damage to enemies in range of the attackpoint
     private void Attack()
     {
+        animator.SetTrigger("Attack");
         if (this.GetComponent<PlayerMovement>().Dir == 3)
             attackPoint.position *= -1;
         else if (this.GetComponent<PlayerMovement>().Dir != 1)
