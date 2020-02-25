@@ -23,7 +23,7 @@ public class EnableAIPath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerIsRange())
+        if (PlayerIsRange(RadiusForPath))
         {
             AIPath.canMove = true;
             this.enabled = false;
@@ -31,11 +31,10 @@ public class EnableAIPath : MonoBehaviour
     }
 
 
-    private bool PlayerIsRange()
+    public bool PlayerIsRange(float distance)
     {
-        DistancePlayer = (target.position.x - Enemy.position.x)* (target.position.x - Enemy.position.x) + (target.position.y - Enemy.position.y)*(target.position.y - Enemy.position.y);
-        Debug.Log(DistancePlayer);
-        return (DistancePlayer <= RadiusForPath * RadiusForPath);
+        DistancePlayer = (target.position.x - Enemy.position.x) * (target.position.x - Enemy.position.x) + (target.position.y - Enemy.position.y) * (target.position.y - Enemy.position.y);
+        return (DistancePlayer <= distance * distance);
     }
 
 }

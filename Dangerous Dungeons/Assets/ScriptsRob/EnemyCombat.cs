@@ -5,21 +5,30 @@ using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
 {
-    public int MaxHealth = 50;
+    public int MaxHealth = 2;
     public int currentHealth;
     public int Damage;
     public PlayerCombat Player;
     Destroy parent;
+    EnableAIPath enableAIp;
 
     
 
     //damages the playeur when it is in the enemy
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject Enemy = collision.gameObject;
         if (Enemy.tag == "Player")
         {
-            Player.DamagePlayer(Damage);
+            float time = 0;
+            while (time != 2)
+            {
+                time =+ Time.deltaTime;
+            }
+            if (enableAIp.PlayerIsRange(1f))
+                Player.DamagePlayer(Damage);
+            
+     
         }
     }
     
@@ -38,6 +47,7 @@ public class EnemyCombat : MonoBehaviour
         Debug.Log(this.name + " Died.");
         GetComponent<Collider2D>().enabled = false;
         Destroy(this.gameObject);
+        //play death anim
         parent.destroyGameObject();
         this.enabled = false;
     }
@@ -46,5 +56,6 @@ public class EnemyCombat : MonoBehaviour
     {
         currentHealth = MaxHealth;
         parent = GetComponentInParent<Destroy>();
+        enableAIp = GetComponentInParent<EnableAIPath>();
     }
 }
