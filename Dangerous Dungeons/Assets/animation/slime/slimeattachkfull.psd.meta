@@ -1,46 +1,28 @@
 fileFormatVersion: 2
-guid: a3af3ddd492313344b43e82f685749de
+guid: 10d7c971b5f6a1d4f937a219f4d510e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5318081018696264068
-    second: tentacleback_full_0
+      213: -5474969981184142970
+    second: slimeattachkfull_0
   - first:
-      213: -1052736791632593240
-    second: tentacleback_full_1
+      213: 8585911011311982470
+    second: slimeattachkfull_1
   - first:
-      213: 4729396306086284675
-    second: tentacleback_full_2
+      213: 7981619614685640988
+    second: slimeattachkfull_2
   - first:
-      213: 2762788836874573121
-    second: tentacleback_full_3
+      213: 692413178189406381
+    second: slimeattachkfull_3
   - first:
-      213: -5679122547261982441
-    second: tentacleback_full_4
+      213: 7197763069683309454
+    second: slimeattachkfull_4
   - first:
-      213: -1561724181524022983
-    second: tentacleback_full_5
+      213: 3290083355471057454
+    second: slimeattachkfull_5
   - first:
-      213: -6403844831576879684
-    second: tentacleback_full_6
-  - first:
-      213: -5992096806765350376
-    second: tentacleback_full_7
-  - first:
-      213: -6302534729557514652
-    second: tentacleback_full_8
-  - first:
-      213: 8537412053122134865
-    second: tentacleback_full_9
-  - first:
-      213: 8765173518075236098
-    second: tentacleback_full_10
-  - first:
-      213: 5708735367559084799
-    second: tentacleback_full_11
-  - first:
-      213: -2898846594142699184
-    second: tentacleback_full_12
+      213: -5613733358606231496
+    second: slimeattachkfull_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -173,13 +155,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tentacleback_full_0
+      name: slimeattachkfull_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4896326928e9dc940800000000000000
-      internalID: 5318081018696264068
+      spriteID: 681979b4fcff404b0800000000000000
+      internalID: -5474969981184142970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tentacleback_full_1
+      name: slimeattachkfull_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ae31c4377de361f0800000000000000
-      internalID: -1052736791632593240
+      spriteID: 6879d5e1398472770800000000000000
+      internalID: 8585911011311982470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tentacleback_full_2
+      name: slimeattachkfull_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38d415a02e032a140800000000000000
-      internalID: 4729396306086284675
+      spriteID: c19b0a940c864ce60800000000000000
+      internalID: 7981619614685640988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tentacleback_full_3
+      name: slimeattachkfull_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +232,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 145d25b2fc5675620800000000000000
-      internalID: 2762788836874573121
+      spriteID: da067c3fd12fb9900800000000000000
+      internalID: 692413178189406381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tentacleback_full_4
+      name: slimeattachkfull_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719b98ee124bf21b0800000000000000
-      internalID: -5679122547261982441
+      spriteID: e8b16e1606793e360800000000000000
+      internalID: 7197763069683309454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tentacleback_full_5
+      name: slimeattachkfull_5
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9397f1b9124a35ae0800000000000000
-      internalID: -1561724181524022983
+      spriteID: e2217445169b8ad20800000000000000
+      internalID: 3290083355471057454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tentacleback_full_6
+      name: slimeattachkfull_6
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,134 +295,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbd83210e09f027a0800000000000000
-      internalID: -6403844831576879684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tentacleback_full_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 812bff4a3bbc7dca0800000000000000
-      internalID: -5992096806765350376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tentacleback_full_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46669244e06e888a0800000000000000
-      internalID: -6302534729557514652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tentacleback_full_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 153bb77770bfa7670800000000000000
-      internalID: 8537412053122134865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tentacleback_full_10
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20f0983ffd624a970800000000000000
-      internalID: 8765173518075236098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tentacleback_full_11
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffa71141290893f40800000000000000
-      internalID: 5708735367559084799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tentacleback_full_12
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 32
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05106c1a16a35c7d0800000000000000
-      internalID: -2898846594142699184
+      spriteID: 838d380d0430812b0800000000000000
+      internalID: -5613733358606231496
       vertices: []
       indices: 
       edges: []
