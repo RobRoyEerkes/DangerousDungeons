@@ -11,6 +11,7 @@ public class EnemyCombat : MonoBehaviour
     public PlayerCombat Player;
     Destroy parent;
     EnableAIPath enableAIp;
+    Animator Anim;
 
     
 
@@ -20,14 +21,10 @@ public class EnemyCombat : MonoBehaviour
         GameObject Enemy = collision.gameObject;
         if (Enemy.tag == "Player")
         {
-            float time = 0;
-            while (time != 2)
-            {
-                time =+ Time.deltaTime;
-            }
+            
             if (enableAIp.PlayerIsRange(2f))
                 Player.DamagePlayer(Damage);
-            
+            Anim.SetTrigger("Attack");
      
         }
     }
@@ -57,5 +54,6 @@ public class EnemyCombat : MonoBehaviour
         currentHealth = MaxHealth;
         parent = GetComponentInParent<Destroy>();
         enableAIp = GetComponentInParent<EnableAIPath>();
+        Anim = GetComponent<Animator>();
     }
 }
