@@ -25,7 +25,7 @@ public class EnemyCombat : MonoBehaviour
             {
                 time =+ Time.deltaTime;
             }
-            if (enableAIp.PlayerIsRange(1f))
+            if (enableAIp.PlayerIsRange(2f))
                 Player.DamagePlayer(Damage);
             
      
