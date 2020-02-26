@@ -13,7 +13,6 @@ public class EnemyCombat : MonoBehaviour
     EnableAIPath enableAIp;
     Animator Anim;
 
-    
 
     //damages the playeur when it is in the enemy
     public void OnCollisionEnter2D(Collision2D collision)

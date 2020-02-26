@@ -11,12 +11,16 @@ public class PlayerCombat : MonoBehaviour
 
     public float attackRange;
     public int attackDamage;
+    public float coolDownTime;
+    private float nextUpTime;
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-            Attack();
-        
+        if (Time.time > nextUpTime)
+        {
+            if (Input.GetMouseButtonDown(0))
+                Attack();
+        }
     }
 
     private void Start()
@@ -39,7 +43,9 @@ public class PlayerCombat : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, EnemyLayers);
         foreach (Collider2D enemy in hitEnemies) 
             enemy.GetComponent<EnemyCombat>().takeDamage(attackDamage);
-        
+        // Cooldown timer
+        nextUpTime = Time.time + coolDownTime;
+
     }
     
     //debug for seeing the range of the attack (only in the editor)
