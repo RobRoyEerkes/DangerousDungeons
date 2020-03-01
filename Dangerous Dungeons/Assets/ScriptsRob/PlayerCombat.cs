@@ -8,7 +8,8 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public LayerMask EnemyLayers;
     private Animator animator;
-    public Canvas healthbar;
+    public SpriteRenderer[] hartjes;
+    
 
     public float attackRange;
     public int attackDamage;
@@ -22,12 +23,22 @@ public class PlayerCombat : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
                 Attack();
         }
+        //heathbar stuff
+        int i = 0;
+        foreach (SpriteRenderer hartje in hartjes)
+        {
+            if (i > Health)
+                hartje.enabled = false;
+            else
+                hartje.enabled = true;
+            i++;
+        }
     }
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        
+        hartjes = GetComponentsInChildren<SpriteRenderer>();
     }
 
     //called when player wants to atack 
@@ -62,12 +73,13 @@ public class PlayerCombat : MonoBehaviour
     public void DamagePlayer(int Damage)
     {
         Health -= Damage;
-        healthbar.hartje1.enabled = false;
+        
         Debug.Log(Health);
         if (Health < 1)
         {
             Debug.Log("You Died");
-            Destroy(this.gameObject);
+            animator.SetTrigger("Death");
+            //show canvas of retry scene
         }
     }
 }
