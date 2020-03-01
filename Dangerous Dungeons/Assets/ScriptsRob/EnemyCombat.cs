@@ -12,6 +12,7 @@ public class EnemyCombat : MonoBehaviour
     Destroy parent;
     EnableAIPath enableAIp;
     Animator Anim;
+    bool is_skelet;
 
 
     //damages the playeur when it is in the enemy
@@ -55,4 +56,5 @@ public class EnemyCombat : MonoBehaviour
         enableAIp = GetComponentInParent<EnableAIPath>();
         Anim = GetComponent<Animator>();
     }
+
 }

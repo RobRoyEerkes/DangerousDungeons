@@ -8,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public LayerMask EnemyLayers;
     private Animator animator;
+    public Canvas healthbar;
 
     public float attackRange;
     public int attackDamage;
@@ -26,6 +27,7 @@ public class PlayerCombat : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        
     }
 
     //called when player wants to atack 
@@ -60,6 +62,7 @@ public class PlayerCombat : MonoBehaviour
     public void DamagePlayer(int Damage)
     {
         Health -= Damage;
+        healthbar.hartje1.enabled = false;
         Debug.Log(Health);
         if (Health < 1)
         {
