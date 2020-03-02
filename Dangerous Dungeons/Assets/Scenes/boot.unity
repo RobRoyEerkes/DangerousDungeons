@@ -209,6 +209,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3138773705655262752, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: Cam
+      value: 
+      objectReference: {fileID: 1801956216}
+    - target: {fileID: 3138773705655262753, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3138773705655262754, guid: a8fa43f8d6407c4499d5464986f9887d,
         type: 3}
       propertyPath: m_Name
@@ -227,7 +237,7 @@ PrefabInstance:
     - target: {fileID: 3138773705655262759, guid: a8fa43f8d6407c4499d5464986f9887d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3138773705655262759, guid: a8fa43f8d6407c4499d5464986f9887d,
         type: 3}
@@ -339,7 +349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075589110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.24, y: -1.46, z: -33.211746}
+  m_LocalPosition: {x: -3.24, y: -1.46, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
