@@ -795,12 +795,12 @@ PrefabInstance:
     - target: {fileID: 3138773705655262759, guid: a8fa43f8d6407c4499d5464986f9887d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.478
+      value: -11.68
       objectReference: {fileID: 0}
     - target: {fileID: 3138773705655262759, guid: a8fa43f8d6407c4499d5464986f9887d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.231
+      value: -2.91
       objectReference: {fileID: 0}
     - target: {fileID: 3138773705655262759, guid: a8fa43f8d6407c4499d5464986f9887d,
         type: 3}
@@ -874,7 +874,7 @@ PrefabInstance:
     - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.120091
+      value: -1.95
       objectReference: {fileID: 0}
     - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
         type: 3}
@@ -919,6 +919,21 @@ PrefabInstance:
     - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
+        type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7646904311105044116, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
@@ -1242,7 +1257,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1284514729
 GameObject:
