@@ -136,12 +136,12 @@ PrefabInstance:
     - target: {fileID: 4997776361554735348, guid: 0bfae0747078eb64397e8646c2de829d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.92
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4997776361554735348, guid: 0bfae0747078eb64397e8646c2de829d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.37
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4997776363238560532, guid: 0bfae0747078eb64397e8646c2de829d,
         type: 3}
@@ -151,12 +151,12 @@ PrefabInstance:
     - target: {fileID: 4997776363238560533, guid: 0bfae0747078eb64397e8646c2de829d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.19
+      value: 6.96
       objectReference: {fileID: 0}
     - target: {fileID: 4997776363238560533, guid: 0bfae0747078eb64397e8646c2de829d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 4997776363238560533, guid: 0bfae0747078eb64397e8646c2de829d,
         type: 3}
@@ -277,7 +277,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192257166}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -762,7 +762,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558718393}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -782,6 +782,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322320972820310324, guid: a8fa43f8d6407c4499d5464986f9887d,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3138773705655262752, guid: a8fa43f8d6407c4499d5464986f9887d,
         type: 3}
       propertyPath: Cam
@@ -924,12 +984,12 @@ PrefabInstance:
     - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7377137108290900368, guid: 5b99cb84a9853384d9a855fc58a3fbb3,
         type: 3}
@@ -983,7 +1043,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901721961}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1091,7 +1151,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012067109}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1165,7 +1225,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070289261}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1358,7 +1418,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330016570}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1918,7 +1978,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753509659}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
