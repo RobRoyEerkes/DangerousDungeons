@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class DrakenBaas : MonoBehaviour
@@ -14,6 +15,7 @@ public class DrakenBaas : MonoBehaviour
     public Animator Anim;
     private BoxCollider2D[] Fires;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +23,10 @@ public class DrakenBaas : MonoBehaviour
         Fires = GetComponentsInChildren<BoxCollider2D>();
         foreach (BoxCollider2D Fire in Fires)
         {
-            Fire.enabled = false;
+            if (Fire.name != "Draak")
+                Fire.enabled = false;
         }
+        
     }
 
     void FixedUpdate()
@@ -37,7 +41,7 @@ public class DrakenBaas : MonoBehaviour
 
     private void BlowFire()
     {
-        draakHoofd = Mathf.RoundToInt(Random.value * 3);
+        draakHoofd = Mathf.RoundToInt(Random.value * 2) + 1;
         Anim.SetInteger("vuur maakt niet uit", draakHoofd);
         Fires[draakHoofd].enabled = true;
     }
@@ -59,4 +63,16 @@ public class DrakenBaas : MonoBehaviour
         Anim.SetInteger("vuur maakt niet uit", 0);
     }
 
+    public void takeDamage(int damage)
+    {
+        Health -= damage;
+        Debug.Log(Health);
+        if (Health < 1)
+            Die();
+    }
+
+    void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

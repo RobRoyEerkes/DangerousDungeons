@@ -12,6 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Title screen.unity
     guid: 9b129e3c83808e2408dcc0d30bc8a15f
   - enabled: 1
+    path: Assets/Scenes/beginStory.unity
+    guid: 08ade5cda470200469d930ff1579c59d
+  - enabled: 1
     path: Assets/Scenes/Village.unity
     guid: a05a1b06cc70d38429de143cae455386
+  - enabled: 1
+    path: Assets/Scenes/Bos.unity
+    guid: ff6aa5c6365e1e949a52d95f642bd520
+  - enabled: 1
+    path: Assets/Scenes/boot.unity
+    guid: 3bee8a69596eda64b819198e041248df
+  - enabled: 1
+    path: Assets/Scenes/woestijn.unity
+    guid: 2ec89c2787ec7a0429726d033f5ea644
+  - enabled: 1
+    path: Assets/Scenes/vulkaan.unity
+    guid: afa033395e077d64d9b55246292a375b
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 4bcadbf36310afb419e99275f1cfeec4
   m_configObjects: {}

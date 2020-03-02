@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &279938425 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3138773705655262756, guid: a8fa43f8d6407c4499d5464986f9887d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1733859667}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052d0d6ce278eee4c8c72497075fdaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1113402583
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +273,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Draak
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597221028381537701, guid: cc3d8a02f4530ac4da9932dd099fc343,
+        type: 3}
+      propertyPath: PlayerC
+      value: 
+      objectReference: {fileID: 279938425}
+    - target: {fileID: 4597221028381537701, guid: cc3d8a02f4530ac4da9932dd099fc343,
+        type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660403160977712339, guid: cc3d8a02f4530ac4da9932dd099fc343,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113915199555193579, guid: cc3d8a02f4530ac4da9932dd099fc343,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357233868315815599, guid: cc3d8a02f4530ac4da9932dd099fc343,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179559839658191512, guid: cc3d8a02f4530ac4da9932dd099fc343,
+        type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc3d8a02f4530ac4da9932dd099fc343, type: 3}

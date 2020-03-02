@@ -55,8 +55,19 @@ public class PlayerCombat : MonoBehaviour
             attackPoint.position.Set(0, -1 * attackPoint.position.x, 0);
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, EnemyLayers);
-        foreach (Collider2D enemy in hitEnemies) 
-            enemy.GetComponent<EnemyCombat>().takeDamage(attackDamage);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+
+            if (enemy.name != "Draak")
+            {
+                enemy.GetComponent<EnemyCombat>().takeDamage(attackDamage);
+            }
+            else
+            {
+                Debug.Log("draak");
+                enemy.GetComponent<DrakenBaas>().takeDamage(attackDamage);
+            } 
+        }
         // Cooldown timer
         nextUpTime = Time.time + coolDownTime;
 
