@@ -445,6 +445,17 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4307749372425317540, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_text
+      value: "Maak de afdaling naar het strand/Je bent veilig op het strand aangekomen,
+        maar je staat nu voor een gevaarlijke oversteek.In deze wateren leven monsters
+        waarover al jarenlang mythes en legendes worden verteld door de mensen van
+        Kostka. Er gaan verhalen rond van ervaren zeelui die gigantische oktopussen
+        hebben zien opduiken, die hele schepen de diepte in hebben getrokken. Let
+        goed op! Bijna elke reiziger die deze zee over durfde te steken is nooit
+        meer teruggezien\u2026\r\n\r\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 4307749372960062488, guid: c10f70926d24632428a1937fba2a8a45,
         type: 3}
       propertyPath: m_textInfo.characterCount
