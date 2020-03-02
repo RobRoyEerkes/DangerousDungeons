@@ -9,7 +9,8 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask EnemyLayers;
     private Animator animator;
     public SpriteRenderer[] hartjes;
-    
+
+    public Canvas BlueScreenOfDeath;
 
     public float attackRange;
     public int attackDamage;
@@ -79,7 +80,7 @@ public class PlayerCombat : MonoBehaviour
         {
             Debug.Log("You Died");
             animator.SetTrigger("Death");
-            //show canvas of retry scene
+            BlueScreenOfDeath.GetComponent<Canvas>().enabled = true;
         }
     }
 }

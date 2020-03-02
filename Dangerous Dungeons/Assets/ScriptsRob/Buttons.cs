@@ -16,4 +16,14 @@ public class Buttons : MonoBehaviour
             
        Application.Quit();
     }
+
+    public void RetryLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void TitleScreen()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
