@@ -12,6 +12,7 @@ public class Kraken : MonoBehaviour
     private int timer;
     public Vector2[] hitboxes;
     Animator[] Anims;
+    int tentacleNum;
 
     void Start()
     {
@@ -47,14 +48,14 @@ public class Kraken : MonoBehaviour
     private Vector2 BoxDimensie(Vector2 behh)
     {
         behh.x += .66f;
-        behh.y -= 1.5f;
+        behh.y -= 2.4f;
         return behh;
     }
 
-    public void Attack(int tentacleNum)
+    public void Attack()
     {
-        //turn animator on
-        Collider2D hitPlayer = Physics2D.OverlapArea(hitboxes[tentacleNum], BoxDimensie(hitboxes[tentacleNum]));
+        
+        Collider2D hitPlayer = Physics2D.OverlapArea(hitboxes[tentacleNum], BoxDimensie(hitboxes[tentacleNum]), 10);
         
         if (hitPlayer != null)
         {
@@ -71,16 +72,11 @@ public class Kraken : MonoBehaviour
         }    
     }
 
-    private void OnDrawGizmos()
-    {
-        if (hitboxes == null)
-            return;
-        Gizmos.DrawLine(hitboxes[1], BoxDimensie(hitboxes[1]));
-    }
 
-    private void turnAnimationOn(int tentacleNum)
+    private void turnAnimationOn()
     {
-        Anims[tentacleNum].enabled = true;
+        tentacleNum = Mathf.RoundToInt(Random.value * 3);
+        Anims[tentacleNum].SetTrigger("Slap");
     }
 
 
@@ -89,7 +85,7 @@ public class Kraken : MonoBehaviour
         if (timer > 300)
         {
             timer = 0;
-            Attack(Mathf.RoundToInt(Random.value * 3));
+            turnAnimationOn();
         }
         timer++;
     }
