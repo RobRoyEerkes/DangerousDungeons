@@ -1,10 +1,10 @@
-using System;
-using System.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Kraken : MonoBehaviour
 {
-    public Player  player;
+    public GameObject  player;
     private PlayerMovement PlayerM;
     
     void Start()
