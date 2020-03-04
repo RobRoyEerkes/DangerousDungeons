@@ -407,7 +407,7 @@ PrefabInstance:
     - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.29
+      value: 5.24
       objectReference: {fileID: 0}
     - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
         type: 3}
@@ -888,6 +888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: layermask.m_Bits
       value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 654665575380340755, guid: 25c00ab029101e74b9c712d48b9165db,
+        type: 3}
+      propertyPath: Health
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 654665575380341740, guid: 25c00ab029101e74b9c712d48b9165db,
         type: 3}
