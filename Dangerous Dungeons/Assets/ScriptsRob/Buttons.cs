@@ -14,7 +14,7 @@ public class Buttons : MonoBehaviour
     {
         Debug.Log("QUIT!!");
             
-       Application.Quit();
+        Application.Quit();
     }
 
     public void RetryLevel()

@@ -62,9 +62,10 @@ public class PlayerCombat : MonoBehaviour
             {
                 Debug.Log("draak");
                 enemy.GetComponent<DrakenBaas>().takeDamage(attackDamage);
-            }else if(enemy.name == "Tentacle")
+            }else if(enemy.tag == "Tentacle")
             {
                 enemy.GetComponentInParent<Kraken>().takeDamage(attackDamage);
+                Debug.Log("hit");
             }
             else
             {
