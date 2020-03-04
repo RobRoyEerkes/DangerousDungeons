@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/boot.unity
     guid: 3bee8a69596eda64b819198e041248df
   - enabled: 1
+    path: Assets/Scenes/afterboot.unity
+    guid: 69d66d9fa59a08f4f88c5f3ecb4baa0a
+  - enabled: 1
     path: Assets/Scenes/woestijn.unity
     guid: 2ec89c2787ec7a0429726d033f5ea644
   - enabled: 1
