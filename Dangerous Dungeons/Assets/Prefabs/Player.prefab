@@ -676,7 +676,7 @@ MonoBehaviour:
     m_Bits: 256
   hartjes: []
   BlueScreenOfDeath: {fileID: 5839009181210499761}
-  attackRange: 0.33
+  attackRange: 0.63
   attackDamage: 1
   coolDownTime: 0.55
 --- !u!114 &3138773705655262752

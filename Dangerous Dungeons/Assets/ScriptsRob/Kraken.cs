@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Kraken : MonoBehaviour
 {
@@ -13,10 +14,15 @@ public class Kraken : MonoBehaviour
     public Vector2[] hitboxes;
     Animator[] Anims;
     int tentacleNum;
+    public LayerMask layermask;
+    BoxCollider2D[] TenColliders;
+    public int Health = 10;
+
 
     void Start()
     {
         timer = 0;
+        TenColliders = GetComponentsInChildren<BoxCollider2D>();
         Playerbc = player.GetComponent<BoxCollider2D>();
         PlayerM = player.GetComponent<PlayerMovement>();
         PlayerC = player.GetComponent<PlayerCombat>();
@@ -31,6 +37,7 @@ public class Kraken : MonoBehaviour
                 hitboxes[i / 2 - 1] = place;
             }
         }
+        
     }
     
     public void ImpairMovement()
@@ -41,6 +48,7 @@ public class Kraken : MonoBehaviour
 
     public void RegainMovement()
     {
+        TenColliders[tentacleNum].enabled = false;
         Playerbc.enabled = true;
         PlayerM.enabled = true;
     }
@@ -54,8 +62,8 @@ public class Kraken : MonoBehaviour
 
     public void Attack()
     {
-        
-        Collider2D hitPlayer = Physics2D.OverlapArea(hitboxes[tentacleNum], BoxDimensie(hitboxes[tentacleNum]), 10);
+        TenColliders[tentacleNum].enabled = true;
+        Collider2D hitPlayer = Physics2D.OverlapArea(hitboxes[tentacleNum], BoxDimensie(hitboxes[tentacleNum]), layermask);
         
         if (hitPlayer != null)
         {
@@ -70,6 +78,16 @@ public class Kraken : MonoBehaviour
                 Debug.Log("bla");
             }
         }    
+    }
+
+    public void takeDamage(int damage)
+    {
+        Health -= damage;
+        Debug.Log(Health);
+        if (Health < 1)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
 

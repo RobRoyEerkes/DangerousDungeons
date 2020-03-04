@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5620169644656046006}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: CornerAttack (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,8 +41,10 @@ GameObject:
   - component: {fileID: 654665575238047738}
   - component: {fileID: 654665575238047739}
   - component: {fileID: 654665575238047732}
-  m_Layer: 0
-  m_Name: Tback1
+  - component: {fileID: 4809064612766325436}
+  - component: {fileID: 355964896251149768}
+  m_Layer: 8
+  m_Name: Tentacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,6 +135,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4809064612766325436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654665575238047733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e0eb4d1a715c84c8d3e03f5abbc465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kraken: {fileID: 654665575380340755}
+--- !u!61 &355964896251149768
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654665575238047733}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.049720287, y: 0.20882416}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 3}
+    newSize: {x: 1, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8210068, y: 2.5823517}
+  m_EdgeRadius: 0
 --- !u!1 &654665575380341740
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 654665575380340754}
   - component: {fileID: 654665575380340755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Kraken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,6 +227,10 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 0
+  Health: 10
 --- !u!1 &654665575676513285
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +242,10 @@ GameObject:
   - component: {fileID: 654665575676513290}
   - component: {fileID: 654665575676513291}
   - component: {fileID: 654665575676513284}
-  m_Layer: 0
-  m_Name: Tfront1
+  - component: {fileID: 783769145238389057}
+  - component: {fileID: 1107933114435669540}
+  m_Layer: 8
+  m_Name: Tentacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,6 +336,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &783769145238389057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654665575676513285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e0eb4d1a715c84c8d3e03f5abbc465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kraken: {fileID: 654665575380340755}
+--- !u!61 &1107933114435669540
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654665575676513285}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.3202453}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 5}
+    newSize: {x: 1, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.3595095}
+  m_EdgeRadius: 0
 --- !u!1 &1622917626893318344
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 447405678947033980}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: CornerAttack (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2679497186103279950}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: CornerAttack (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5897895812903157921}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: CornerAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,8 +476,10 @@ GameObject:
   - component: {fileID: 2252183054869805557}
   - component: {fileID: 7720209668248896899}
   - component: {fileID: 2788724677819001827}
-  m_Layer: 0
-  m_Name: Tback1 (1)
+  - component: {fileID: 6358249714249320266}
+  - component: {fileID: 5353662598774522764}
+  m_Layer: 8
+  m_Name: Tentacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -482,6 +570,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6358249714249320266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696774315929973244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e0eb4d1a715c84c8d3e03f5abbc465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kraken: {fileID: 654665575380340755}
+--- !u!61 &5353662598774522764
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696774315929973244}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000011920929, y: 0.22655916}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 3}
+    newSize: {x: 1, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8187525, y: 2.5468817}
+  m_EdgeRadius: 0
 --- !u!1 &8348876023589649551
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,8 +620,10 @@ GameObject:
   - component: {fileID: 3347016048158110173}
   - component: {fileID: 6155676983737268220}
   - component: {fileID: 438174398535228493}
-  m_Layer: 0
-  m_Name: Tfront1 (1)
+  - component: {fileID: 4907730674535420013}
+  - component: {fileID: 8834937391766975825}
+  m_Layer: 8
+  m_Name: Tentacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -585,3 +714,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4907730674535420013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8348876023589649551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e0eb4d1a715c84c8d3e03f5abbc465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kraken: {fileID: 654665575380340755}
+--- !u!61 &8834937391766975825
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8348876023589649551}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.4499798}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 5}
+    newSize: {x: 1, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.90937614, y: 2.1000404}
+  m_EdgeRadius: 0

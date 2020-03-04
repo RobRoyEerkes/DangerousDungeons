@@ -58,14 +58,17 @@ public class PlayerCombat : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
 
-            if (enemy.name != "Draak")
-            {
-                enemy.GetComponent<EnemyCombat>().takeDamage(attackDamage);
-            }
-            else
+            if (enemy.name == "Draak")
             {
                 Debug.Log("draak");
                 enemy.GetComponent<DrakenBaas>().takeDamage(attackDamage);
+            }else if(enemy.name == "Tentacle")
+            {
+                enemy.GetComponentInParent<Kraken>().takeDamage(attackDamage);
+            }
+            else
+            {
+                enemy.GetComponent<EnemyCombat>().takeDamage(attackDamage);
             } 
         }
         // Cooldown timer
