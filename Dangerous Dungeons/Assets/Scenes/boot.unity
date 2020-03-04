@@ -380,6 +380,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8fa43f8d6407c4499d5464986f9887d, type: 3}
+--- !u!1001 &322463365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4307749372425317540, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_text
+      value: "Dat was een helse zeetocht! Je staat nu op het zand van een droge en
+        verlaten woestijn. Je moet de gehele woestijn door, tot je bij een portaal
+        komt waar geen mens in tijden meer is geweest. Het enige wat daarna tussen
+        de bergen leeft, is de beruchte draak Ladon. Vind de trap naar de Tempel
+        waar de draak zich in schuilhoudt. Ondanks dat het gebied volledig dood is,
+        moet je je niet laten misleiden, je zal alert moeten blijven! De dood is
+        niet altijd zo levenloos als je zou denken\u2026 Je bent al aardig op weg.
+        succes!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033844, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_Name
+      value: nextscene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307749373420033846, guid: c10f70926d24632428a1937fba2a8a45,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c10f70926d24632428a1937fba2a8a45, type: 3}
 --- !u!1 &488235633
 GameObject:
   m_ObjectHideFlags: 0

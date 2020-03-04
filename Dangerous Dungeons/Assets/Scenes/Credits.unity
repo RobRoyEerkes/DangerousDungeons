@@ -732,7 +732,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1747920197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1951789735}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1747920197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,6 +1127,7 @@ GameObject:
   - component: {fileID: 1951789733}
   - component: {fileID: 1951789732}
   - component: {fileID: 1951789731}
+  - component: {fileID: 1951789735}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1203,3 +1215,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1951789735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951789730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626e5dd3b8686c54f96f6492190d7c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
